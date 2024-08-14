@@ -561,7 +561,7 @@ Start Installing.
  - Stop capturing the traffic.
 <p align="center">
 <br/>
-<img width="597" alt="Portfolio" src="https://i.imgur.com/txzlh0A.png">
+<img width="340" alt="Portfolio" src="https://i.imgur.com/txzlh0A.png">
 <br />
 <br />
 <br />
