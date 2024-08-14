@@ -45,13 +45,15 @@
     - Oracle Virtual Box installed
     - Ubuntu disk file
     - Windows 10 or 11 disk file
-    - Putty (portable version for Telnet, SSH) *You will download during this tutorial*
-    - WireShark *You will download during this tutorial*
+    - Putty (portable version for Telnet, SSH) *(You will download during this tutorial(*
+    - WireShark *(You will download during this tutorial(*
+
+<br />
+<br />
 
 
 
-2
-
+ - Open Virtual Box, click [New]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/n3chgsF.png">
@@ -62,7 +64,7 @@
 
 
 
-3
+ - Name the VM "Ubuntu" Pick Ubuntu ISO image, check [Skip Unattended Installation]. Click [Next]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/EnqTEcG.png">
@@ -73,9 +75,7 @@
 
 
 
-
-
-4
+ - Leave the processor & RAM setting as default. Click [Finish]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/Jp9b5Ay.png">
@@ -84,9 +84,8 @@
 <br />
 <br />
 
-
-
-5
+ - Go to VM setting, enable the second adapter and attach to "Internal Network"
+ - Click [OK] and run the VM.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/zR2PTcp.png">
@@ -95,8 +94,13 @@
 <br />
 <br />
 
+---
+## Ubuntu VM Setup
 
-6
+<br />
+<br />
+
+ - Pick [Try or Install Ubuntu] and hit ENTER.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/1uwpjm9.png">
@@ -105,8 +109,8 @@
 <br />
 <br />
 
+ - Pick English, click [Install Ubuntu]
 
-7
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/NeYGKfz.png">
@@ -116,8 +120,8 @@
 <br />
 
 
+ - Set keyboard layout as [English(US)]. Click [Continue]
 
-8
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/CmRUbWv.png">
@@ -126,8 +130,7 @@
 <br />
 <br />
 
-
-9
+ - Uncheck [Download updates while installing Ubuntu] for minimum installation.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/XoNpeaT.png">
@@ -136,9 +139,8 @@
 <br />
 <br />
 
-
-
-10
+ - Pick [Erase disk and install Ubuntu]
+Start Installing.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/vJnVHHY.png">
@@ -147,8 +149,7 @@
 <br />
 <br />
 
-
-11
+ - When asked about your geographical location, pick default and click [Continue]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/VKbGOJR.png">
@@ -158,8 +159,8 @@
 <br />
 
 
-
-12
+ - Set up your user account. In this lab:
+(username: soel, password: Password123)
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/GdjXIJj.png">
@@ -168,8 +169,7 @@
 <br />
 <br />
 
-
-13
+ - Once the OS installation is complete, open up a terminal. *Note: We're skipping the* `sudo apt upgrade` *command for this lab.*
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/B6neekT.png">
@@ -178,8 +178,7 @@
 <br />
 <br />
 
-
-14
+ - Go to Network Setting. The first adapter shows that this VM is NATed from our home router. Press the gear wheel icon on the second adapter, our internal network.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/M0Bsn4R.png">
@@ -188,8 +187,8 @@
 <br />
 <br />
 
-
-15
+ - Assign an IP address to our VM. Go to [IPv4] and select [IPv4 Method] as [Manual]. Assign IP address 192.168.50.100 with subnet mask 255.255.255.0.
+ - Leave the DNS and Gateway blank. Click [Apply]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/hA81PLt.png">
@@ -199,10 +198,7 @@
 <br />
 
 
-
-
-
-16
+ - Use the `ip a` command to check if the IP address is correctly assigned.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/8FSU6tW.png">
@@ -211,8 +207,14 @@
 <br />
 <br />
 
+---
+## Windows VM Setup
 
-17
+<br />
+<br />
+
+
+ - Go to Virtual Box, click [New]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/MvLByj4.png">
@@ -222,8 +224,7 @@
 <br />
 
 
-
-18
+ - Name this VM "Windows-10". Pick Windows ISO image, check [Skip Unattended Installation]. Click [Next]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/aphEO10.png">
@@ -232,9 +233,7 @@
 <br />
 <br />
 
-
-
-19
+ - Leave the processor & RAM setting as default. Click [Finish]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/KfnyUNK.png">
@@ -244,9 +243,7 @@
 <br />
 
 
-
-
-20
+ - Go to VM setting, on the [General] tab, choose [Bidirectional] for both [Shared Clipboard] and [Drag'n'Drop]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/sxuRpYk.png">
@@ -255,8 +252,7 @@
 <br />
 <br />
 
-
-21
+ - Add the second adapter for our internal network.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/jy4JU6h.png">
@@ -267,10 +263,7 @@
 
 
 
-
-
-
-22
+ - Run the VM and start the installation.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/MD42kWn.png">
@@ -281,10 +274,7 @@
 
 
 
-
-
-
-23
+ - Make sure to pick [Windows 10 Pro] instead of [Windows 10 Home]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/1DkxSvo.png">
@@ -293,12 +283,7 @@
 <br />
 <br />
 
-
-
-
-
-
-24
+ - Pick Custom: Install Windows only - this means formatting the hard drive and installing from scratch.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/oPNAwxa.png">
@@ -307,12 +292,7 @@
 <br />
 <br />
 
-
-
-
-
-
-25
+ - Click [Offline Account] to avoid signing in. Skip all the extra feature offers.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/ivT1HFD.png">
@@ -322,11 +302,7 @@
 <br />
 
 
-
-
-
-
-26
+ - Set up the name of your User Account (in this lab, Soel_Lab)
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/YIHmgx4.png">
@@ -337,10 +313,7 @@
 
 
 
-
-
-
-27
+ - Set up the password (in this lab, Password123)
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/ZfkUOib.png">
@@ -350,11 +323,7 @@
 <br />
 
 
-
-
-
-
-28
+ - Once the OS installation is finished, click [Device] - [Insert Guest Additions CD image]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/YlFtIAa.png">
@@ -364,11 +333,7 @@
 <br />
 
 
-
-
-
-
-29
+ - Double click your optical drive.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/9sk7v6N.png">
@@ -378,11 +343,7 @@
 <br />
 
 
-
-
-
-
-30
+ - Click [VBoxWindowsAdditions-amd64] and proceed installation with default settings. Reboot your VM manually after installation.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/vfGEH35.png">
@@ -392,11 +353,7 @@
 <br />
 
 
-
-
-
-
-31
+ - Go to network connection setting. Configure the second network adapter for our VM internal network.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/O8pctjU.png">
@@ -406,11 +363,7 @@
 <br />
 
 
-
-
-
-
-32
+ - Click [Internet Protocol Version 4(TCP/IPv4)] - [Properties]. Set IP address: 192.168.50.50, subnetmask: 255.255.255.0
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/45a4lbE.png">
@@ -419,12 +372,14 @@
 <br />
 <br />
 
+---
+## Configuring Windows Firewall
 
+<br />
+<br />
 
-
-
-
-33
+ - Shut down the firewall so our Ubuntu machine can ping the Windows 10 machine.
+     - *(Note: This is only for lab environments, not for corporate settings!)*
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/LppYNpX.png">
@@ -435,10 +390,7 @@
 
 
 
-
-
-
-34
+ - Click [Windows Defender Firewall Properties] - [Public Profile]. Pick [Off] for [Firewall state]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/vZU9uKL.png">
@@ -447,12 +399,10 @@
 <br />
 <br />
 
+---
+## Testing Connectivity
 
-
-
-
-
-35
+ - Go to Ubuntu machine and check if we can ping the Windows VM.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/EdluQDm.png">
@@ -462,11 +412,7 @@
 <br />
 
 
-
-
-
-
-36
+ - Go to Command Prompt from the Windows machine, check if we can ping our Ubuntu machine.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/ann50dB.png">
@@ -476,11 +422,13 @@
 <br />
 
 
+---
+## Installing Necessary Software
 
+<br />
+<br />
 
-
-
-37
+ - Download Wireshark Windows x64 Installer from the Wireshark webpage.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/k7UHXEu.png">
@@ -490,11 +438,7 @@
 <br />
 
 
-
-
-
-
-38
+ - Go to putty.org, and click [Download PuTTy]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/6H99otN.png">
@@ -503,12 +447,7 @@
 <br />
 <br />
 
-
-
-
-
-
-39
+ - Use the portable version that does not require installation.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/kbPAjhm.png">
@@ -519,10 +458,7 @@
 
 
 
-
-
-
-40
+ - Install Wireshark with default setting.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/10dnLzY.png">
@@ -533,10 +469,7 @@
 
 
 
-
-
-
-41
+ - Install Telnet on Ubuntu VM using the command `sudo apt install telnetd`
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/WZMZo9t.png">
@@ -546,11 +479,7 @@
 <br />
 
 
-
-
-
-
-42
+ - Verify Telnet installation with the command `sudo dpkg -l |grep telnetd`
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/0IZ753Q.png">
@@ -559,12 +488,14 @@
 <br />
 <br />
 
+---
+## Capturing Telnet Traffic
+
+<br />
+<br />
 
 
-
-
-
-43
+ - Open Wireshark in Windows 10 VM. Select our internal network (Ethernet 2)
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/8NfxLM9.png">
@@ -574,11 +505,7 @@
 <br />
 
 
-
-
-
-
-44
+ - Open Putty.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/rsBH4dG.png">
@@ -589,10 +516,7 @@
 
 
 
-
-
-
-45
+ - Enter our Ubuntu VM IP address. Select [Telnet] for [Connection Type]. Click [Open]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/sa7Tnso.png">
@@ -602,11 +526,8 @@
 <br />
 
 
-
-
-
-
-46
+ - As soon as we attempt to connect to Ubuntu VM, you will see Telnet traffic from Wireshark.
+ - Enter the Ubuntu VM user ID and Password. Press Enter.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/gFL4JP1.png">
@@ -615,12 +536,7 @@
 <br />
 <br />
 
-
-
-
-
-
-47
+ - Check if the connection is successful with `whoami` command. We can see the Ubuntu VM username.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/5SsnhII.png">
@@ -630,11 +546,7 @@
 <br />
 
 
-
-
-
-
-48
+ - Stop capturing the traffic.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/txzlh0A.png">
@@ -644,11 +556,7 @@
 <br />
 
 
-
-
-
-
-49
+ - Try filtering with [telnet]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/pJQsItc.png">
@@ -657,12 +565,7 @@
 <br />
 <br />
 
-
-
-
-
-
-50
+ - Right-click any event. Click [Follow] - [TCP stream]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/C6yPRGE.png">
@@ -672,11 +575,7 @@
 <br />
 
 
-
-
-
-
-51
+ - We can see all the plain text communication between the Windows VM and the Ubuntu VM. We can see the login ID [soel] and the password [Password123]
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/tj4fP5z.png">
@@ -686,11 +585,7 @@
 <br />
 
 
-
-
-
-
-52
+ - We can even see the [whoami] command we used to check the connection status.
 <p align="center">
 <br/>
 <img width="597" alt="Portfolio" src="https://i.imgur.com/M2spuly.png">
@@ -699,9 +594,10 @@
 <br />
 <br />
 
+**Conclusion: Telnet is insecure due to its plain text communication. Threat actors can easily sniff the packets and retrieve all the communication!**
 
-
-
+<br />
+<br />
 
 \<end\>
 
