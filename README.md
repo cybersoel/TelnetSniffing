@@ -20,15 +20,13 @@
 <a name="toc"></a>
 **Table of Contents:**
 
-- [](#)
-
-
-
-
-
-
-
-
+- [Preparation](#preparation)
+- [Ubuntu VM Setup](#ubuntu-vm-setup)
+- [Windows VM Setup](#windows-vm-setup)
+- [Configuring Windows Firewall](#configuring-windows-firewall)
+- [Testing Connectivity](#testing-connectivity)
+- [Installing Necessary Software](#installing-necessary-software)
+- [Capturing Telnet Traffic](#capturing-telnet-traffic)
 
 
 ---
@@ -36,6 +34,8 @@
 <h4>Tip: Any configuration options not mentioned in the walkthrough can be left at their default settings</h4>
 
 ---
+
+[back to top](#toc)
 ## Preparation
 
 <br />
@@ -95,6 +95,8 @@
 <br />
 
 ---
+
+[back to top](#toc)
 ## Ubuntu VM Setup
 
 <br />
@@ -208,6 +210,8 @@ Start Installing.
 <br />
 
 ---
+
+[back to top](#toc)
 ## Windows VM Setup
 
 <br />
@@ -373,6 +377,8 @@ Start Installing.
 <br />
 
 ---
+
+[back to top](#toc)
 ## Configuring Windows Firewall
 
 <br />
@@ -400,6 +406,8 @@ Start Installing.
 <br />
 
 ---
+
+[back to top](#toc)
 ## Testing Connectivity
 
  - Go to Ubuntu machine and check if we can ping the Windows VM.
@@ -423,6 +431,8 @@ Start Installing.
 
 
 ---
+
+[back to top](#toc)
 ## Installing Necessary Software
 
 <br />
@@ -489,6 +499,8 @@ Start Installing.
 <br />
 
 ---
+
+[back to top](#toc)
 ## Capturing Telnet Traffic
 
 <br />
