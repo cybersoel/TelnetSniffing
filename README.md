@@ -20,19 +20,35 @@
 <a name="toc"></a>
 **Table of Contents:**
 
-- 
+- [](#)
 
----
+
+
+
+
+
+
+
+
 
 ---
 
 <h4>Tip: Any configuration options not mentioned in the walkthrough can be left at their default settings</h4>
 
 ---
+## Preparation
+
+<br />
+<br />
+
+ - Files to Prepare:
+    - Oracle Virtual Box installed
+    - Ubuntu disk file
+    - Windows 10 or 11 disk file
+    - Putty (portable version for Telnet, SSH) *You will download during this tutorial*
+    - WireShark *You will download during this tutorial*
 
 
-
----
 
 2
 
