@@ -1,3 +1,25 @@
+# Wireshark Lab: Telnet Sniffing and Network Traffic Analysis
+
+## Key Learnings and Skills Demonstrated
+
+- **Virtual Machine Setup**: Demonstrated proficiency in setting up and configuring Ubuntu and Windows 10 VMs using Oracle VirtualBox.
+- **Network Configuration**: Exhibited expertise in configuring network settings, including NAT and internal network adapters for VMs.
+- **IP Addressing**: Implemented static IP addressing for internal network communication between VMs.
+- **Firewall Management**: Configured Windows Firewall settings to allow network traffic for the lab environment.
+- **Software Installation**: Installed and configured necessary software including Wireshark, PuTTY, and Telnet services.
+- **Packet Capture**: Utilized Wireshark to capture and analyze network traffic between VMs.
+- **Telnet Protocol Analysis**: Demonstrated understanding of the Telnet protocol and its security vulnerabilities.
+- **Traffic Filtering**: Applied filters in Wireshark to isolate and examine specific types of network traffic.
+- **TCP Stream Analysis**: Used Wireshark's TCP stream follow feature to reconstruct and analyze Telnet sessions.
+- **Security Awareness**: Highlighted the insecurity of plain text protocols like Telnet by demonstrating how easily credentials can be intercepted.
+- **Command Line Usage**: Employed various command-line tools for network testing and software installation.
+- **Troubleshooting**: Applied problem-solving skills to ensure connectivity and proper functionality of the lab environment.
+- **Documentation Skills**: Created comprehensive, step-by-step documentation of the lab setup and analysis process.
+- **Virtualization Concepts**: Showcased understanding of virtualization principles in creating isolated network environments.
+
+This project simulates a real-world scenario of analyzing insecure network protocols, providing hands-on experience with network traffic capture and analysis. The skills demonstrated are directly applicable to roles in network security, system administration, and cybersecurity analysis, offering practical insight into the importance of secure communication protocols.
+
+
 <h1 align="center">Summary Diagram</h1>
 
 
